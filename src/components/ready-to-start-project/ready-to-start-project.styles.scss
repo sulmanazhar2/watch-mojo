@@ -1,0 +1,56 @@
+.ready-to-start-project-component {
+  width: 100%;
+  border-radius: 40px;
+  border: 1px solid #36363b;
+  background: rgba(7, 7, 11, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 89px 0;
+  .ready-to-start-project__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px; /* This is the gap between the flex items */
+
+    > * {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+    .ready-to-start-project__title {
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -2px;
+    }
+    .ready-to-start-project__text {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.5px;
+      max-width: 400px;
+    }
+    .ready-to-start-project__button {
+      border-radius: 50px;
+      border: 1px solid rgba(241, 244, 250, 0.5);
+      background: #e3c565;
+      color: black;
+      padding: 8px 20px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      .button-text {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+      }
+      svg {
+        width: 20px;
+      }
+    }
+  }
+}
