@@ -1,5 +1,6 @@
 import FAQ from "./components/faq/faq.component";
 import ReadyToStartProject from "./components/ready-to-start-project/ready-to-start-project.component";
+import Footer from "./components/footer/footer.component";
 import "./App.scss";
 
 const App: React.FC = () => {
@@ -7,6 +8,7 @@ const App: React.FC = () => {
     <div className="app">
       <FAQ />
       <ReadyToStartProject />
+      <Footer />
     </div>
   );
 };

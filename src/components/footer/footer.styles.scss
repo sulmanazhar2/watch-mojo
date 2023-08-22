@@ -1,0 +1,124 @@
+.footer-component {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  .main-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10%;
+    gap: 140px;
+    .about-application {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      gap: 20px;
+      svg {
+        width: 165.989px;
+        height: 128.974px;
+        flex-shrink: 0;
+      }
+      p {
+      }
+    }
+    .links-and-contact {
+      width: 60%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      .links-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        width: 60%;
+        max-width: 420px;
+        .column {
+          display: flex;
+          flex-direction: column;
+        }
+
+        a {
+          margin: 13px 0;
+          color: #f1f4fa;
+          text-align: left;
+          /* H6 */
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: -0.5px;
+        }
+      }
+      .contact-container {
+        display: flex;
+        flex-direction: column;
+        p {
+          margin: 13px 0;
+          color: #f1f4fa;
+          text-align: left;
+          /* H6 */
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: -0.5px;
+        }
+      }
+    }
+  }
+  .rights-container {
+    border-top: 1px solid rgba(241, 244, 250, 0.2);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    p {
+      color: #f1f4fa;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26.851px; /* 167.822% */
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+      gap: 50px;
+      .about-application {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+      }
+      .links-and-contact {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        gap: 70px;
+        .links-container {
+          flex-direction: column;
+          gap: 0;
+          .column {
+            a {
+              text-align: center;
+            }
+          }
+        }
+        .contact-container {
+          display: flex;
+          flex-direction: column;
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .rights-container {
+      border-top: none;
+    }
+  }
+}
